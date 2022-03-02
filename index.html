@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Numb Guessing Game</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" type="text/css" />
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<div id="contentBox">
+		<input type="text" id="username" placeholder="username?"/> <button id="saveButton">Save</button>
+		<h1 id="gameTitle">Secret Number</h1>
+		<div id="submitBox">
+			<p>See if you can guess a secret number! You have <span id="attemptsRemaining">10</span> attempts...</p>
+			<input type="text" id="guess" placeholder="enter your guess..."/>
+      <button type="submit" id="submit">Submit</button>
+    </div>
+    <div id="scoreBox">
+      <progress class="amount-progress" id="scoreProgress" max="10" value="10"></progress>
+    </div>
+    <div id="guessesBox">
+      <ol id="guesses"></ol>
+    </div>
+    <div id="secretBox">
+      <span id="secret"></span>
+    </div>
+    </div>
+	<script src ="level.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

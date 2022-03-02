@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap');
+
+:root {
+  --main-color: #2E8B57;
+  --blue-color-1: #2CBFBF;
+  --blue-color-2: #B1F2F2;
+  --plum-color: #995968;
+  --purple-color: #BF2C98;
+}
+
+* {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main-color);
+
+background-image: url("https://www.transparenttextures.com/patterns/random-grey-variations.png");
+}
+
+#contentBox {
+  background-color: transparent;
+  width: 600px;
+  border: none;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 60px;
+  padding: 10px;
+}
+
+  #contentBox #gameTitle {
+    color: white;
+    font-family: 'Caesar Dressing', cursive;
+    font-size: 5.0em;
+    margin-bottom: 40px;
+    text-align: center;
+    letter-spacing: 8px;
+  }
+
+#submitBox {
+  background-color: var(--blue-color-1);
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+  #submitBox p, 
+  #submitBox #guess, 
+  #submitBox #submit {
+    margin: 10px;
+  }
+
+  #submitBox #guess,
+  #submitBox #submit {
+    padding: 10px;
+  }
+
+  #submitBox #guess {
+    border: solid 2px black;
+    font-weight: bold;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 1.5em;
+    color: var(--main-color);
+    background-color: var(--blue-color-2);
+  }
+
+  #submitBox #submit {
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: white;
+    color: var(--purple-color);
+  }
+
+  #submitBox #submit:hover {
+    background-color: var(--purple-color);
+    color: white;
+    cursor: pointer;
+  }
+
+#scoreBox {
+  background-color: var(--blue-color-1);
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+  #scoreBox #scoreProgress {
+    width: 100%;
+    height: 90px;
+  }
+  
+
+#guessesBox {
+  background-color: var(--blue-color-1);
+  border: solid 1px black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+}
+  #guessesBox #guesses {
+    margin: 20px;
+  }
+
+#secretBox {
+  background-color: var(--blue-color-1);
+  border: solid 1px black;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+  #secretBox #secret {
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 1.5em;
+    color: white;
+  }
